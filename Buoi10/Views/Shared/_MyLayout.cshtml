@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/MyLayout.css" rel="stylesheet" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="bg-danger">
+            #HEADER
+        </header>
+        <nav></nav>
+        <div class="row">
+            <aside class="col-md-3" id="leftmenu">
+                LEFT MENU
+                @RenderSection("ABC",required:false)
+            </aside>
+            <div class="col-md-9" id="mycontent">
+                @RenderBody()
+            </div>
+        </div>
+        <footer class="text-center text-success" +>
+            Bản quyền thuộc về ABC &reg; 2020
+        </footer>
+    </div>
+</body>
+</html>
