@@ -11,7 +11,7 @@ namespace Buoi10.Services.Interfaces
         void AddProduct(Product product);
         void UpdateProduct(Product product);
         void DeleteProduct(int ID);
-        Product? FindByID(int ID);
+        Product FindByID(int ID);
         IEnumerable<Product> GetAll();
     }
 }

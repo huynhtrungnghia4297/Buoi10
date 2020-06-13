@@ -19,6 +19,7 @@
             <aside class="col-md-3" id="leftmenu">
                 LEFT MENU
                 @RenderSection("ABC",required:false)
+                @await Component.InvokeAsync("CategoryMenu")
             </aside>
             <div class="col-md-9" id="mycontent">
                 @RenderBody()
